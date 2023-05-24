@@ -451,6 +451,20 @@ try:
 except:
     CLONE_LIMIT = None
 try:
+    USER_TASKS_LIMIT = getConfig('USER_TASKS_LIMIT')
+    if len(USER_TASKS_LIMIT) == 0:
+        raise KeyError
+    USER_TASKS_LIMIT = float(USER_TASKS_LIMIT)
+except:
+    USER_TASKS_LIMIT = None
+try:
+    TOTAL_TASKS_LIMIT = getConfig('TOTAL_TASKS_LIMIT')
+    if len(TOTAL_TASKS_LIMIT) == 0:
+        raise KeyError
+    TOTAL_TASKS_LIMIT = float(TOTAL_TASKS_LIMIT)
+except:
+    TOTAL_TASKS_LIMIT = None
+try:
     STORAGE_THRESHOLD = getConfig('STORAGE_THRESHOLD')
     if len(STORAGE_THRESHOLD) == 0:
         raise KeyError
