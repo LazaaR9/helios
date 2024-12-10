@@ -576,7 +576,7 @@ try:
 except:
     START_BTN2_NAME = 'Support Group'
     START_BTN2_URL = 'https://t.me/mirrorsociety'
-updater = tgUpdater(token=BOT_TOKEN, request_kwargs={'read_timeout': 20, 'connect_timeout': 15})
+updater = tgUpdater(bot_token=BOT_TOKEN, request_kwargs={'read_timeout': 20, 'connect_timeout': 15})
 bot = updater.bot
 dispatcher = updater.dispatcher
 job_queue = updater.job_queue
