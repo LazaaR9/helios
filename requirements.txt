@@ -29,4 +29,3 @@ tgCrypto
 xattr
 yt-dlp
 telegraph
-dotenv
